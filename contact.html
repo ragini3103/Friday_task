@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+    body{
+        background-color:skyblue;
+        }
+        header{
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100px;
+            margin: -8px;
+        }
+        header img{
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        header h1
+        {
+         padding: 22px;
+
+        }
+        .navbar{
+            background-color: white;
+            font-weight: 200px;
+            margin-right: 13px;
+        }
+        footer{
+            background-color: rgba(0, 0, 0, 0.961);
+            padding-top: 15px;
+            padding-left: 500px;
+            height: 120px;
+            margin-top: 20px;
+            color: white;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            width: 600px;
+            padding: 20px;
+            height: 450px;
+            margin-left: 320px;
+        }
+        .name{
+            width:560px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .email{
+            width:560px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .subject{
+            width:560px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .message{
+            width:560px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .btn{
+            width:560px;
+            margin-bottom: 10px;
+            background-color: blue;
+            color: white;
+            margin-top: 5px;
+        }
+        </style>
+</head>
+<body>
+      <header>
+        <img src="data:image/jpeg;base64,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" alt="logo" height="80px" width="120px">
+        <h1>SPIRO TECHNOLOGIES</h1>
+        <div class="navbar">
+        <nav class="navbar bg-body-info">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <a class="navbar-brand" href="#about">ABOUT US</a>
+        <a class="navbar-brand" href="#services">SERVICES</a>
+        <a class="navbar-brand" href="client.html">CLIENT</a>
+        <a class="navbar-brand" href="contact.html">CONTACT US</a>
+       </div>
+       </nav>
+       </div>
+    </header>
+
+    <br>
+    <h4 style="text-align: center; color: blue">CONTACT FORM</h4>
+    <br>
+    
+    <div class="form">
+       
+        <form>
+            <label>Name</label>
+            <br>
+            <input type="text" id="name" class="name" placeholder="Enter your name">
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" id="email" class="email" placeholder="Enter your email">
+            <br>
+            <label>Subject</label>
+            <br>
+            <input type="text" id="subject" class="subject" placeholder="Subject">
+            <br>
+            <label>Message</label>
+            <br>
+            <textarea rows="3" id="message" class="message" placeholder="Write your Message..."></textarea>
+            <br>
+            <button type="button" onclick="changes()" class="btn">Send Message</button>
+            <p class="display"></p>
+        </form>
+    </div>
+
+    <a href="index.html" style="text-decoration: none;">
+  <button type="button" style="margin-left: 550px; margin-top: 20px;">
+    BACK TO HOME
+  </button>
+   </a>
+
+
+     <footer>
+        <img src="asset/icons.png" alt="icons" style="margin-top: 10px;">
+        <p>© 2025, Spiro Technologies</p>
+    </footer>
+
+
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+
+</body>
+</html>
